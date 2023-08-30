@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:ui/screens/screen_home.dart';
 import 'package:ui/widgets/bottom_nav_bar.dart';
 
 void main(List<String> args) {

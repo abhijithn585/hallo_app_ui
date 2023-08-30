@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_nav_bar/google_nav_bar.dart';
 import 'package:ui/screens/screen_course.dart';
 import 'package:ui/screens/screen_explore.dart';
 import 'package:ui/screens/screen_home.dart';
@@ -38,7 +37,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
           currentIndex: _selectedIndex,
           onTap: navigateBottomBar,
           type: BottomNavigationBarType.fixed,
-          items: [
+          items: const [
             BottomNavigationBarItem(icon: Icon(Icons.home), label: 'home'),
             BottomNavigationBarItem(icon: Icon(Icons.search), label: 'Explore'),
             BottomNavigationBarItem(icon: Icon(Icons.book), label: 'Course'),
