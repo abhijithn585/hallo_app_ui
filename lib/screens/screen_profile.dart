@@ -10,8 +10,29 @@ class ProfileScreen extends StatefulWidget {
 class _ProfileScreenState extends State<ProfileScreen> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(child: Text('Profile')),
+    return SafeArea(
+      child: Scaffold(
+          body: Column(
+        children: [
+          Row(
+            children: [
+              Container(
+                height: 60,
+                color: Colors.grey,
+                child: Text(
+                  'JERRY',
+                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30),
+                ),
+              ),
+              Container(
+                child: Row(
+                  children: [Icon(Icons.calendar_month)],
+                ),
+              )
+            ],
+          )
+        ],
+      )),
     );
   }
 }
